@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <script src="index.js"></script> <!--referència a l'arxiu JavaScript-->
+    <title>M4_Exercici3</title>
+    <style>label, input, select{margin: 8px}</style> <!--afegeixo una mica d'estil per separar les linies-->
+</head>
+<body>
+    <h1>Valoració de beca</h1>
+    <br>
+<!--Input amb etiqueta on l'ususari introdueix la seva edat-->
+    <label for="quinaEdat">Indica la teva edat:</label>
+    <input type="number" name="quinaEdat" id="quinaEdat"">
+    <br>
+<!--Inputs amb etiquetes on l'ususari escull entre dues opcions-->
+    <label for="teTitol">Tens un títol universitari?</label>
+    <select id="teTitol" name="teTitol">
+      <option value="si">Sí</option>
+      <option value="no">No</option>
+    </select>
+    <br>
+    <label for="estaAtur">Estàs a l'atur?</label>
+    <select id="estaAtur" name="estaAtur">
+      <option value="si">Sí</option>
+      <option value="no">No</option>
+    </select>
+    <br>
+<!--botó per executar la funció i mostrar la resposta-->
+    <input type="button" onclick="analisiBeca()" value="Tramitar sol·licitut">
+    <br>
+
+<!--La resposta romàn amagada fins que es resol la funció-->
+    <p id="resposta" style="display: none">La sol·licitut de la teva beca ha estat <span id="resultatBeca"></span>.</p>
+
+    <!--botó per esborrar les dades i amagar la resposta i el propi botó-->
+    <input id="botoEsborrar" type="button" value="Esborrar" onclick="buttonHideElements()" style="display: none" style="margin: 16px">
+</body>
+</html>

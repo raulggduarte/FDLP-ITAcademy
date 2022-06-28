@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Raúl Gallegos Duarte" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Ruleta russa</title>
+  </head>
+  <body>
+    <h1 id="title">la<br />RULETA <br />RUSSA</h1>
+    <div id="welcomeScreen">
+      <h6>
+        ¡Benvingudes i benvinguts al trepidant<br />i perillós joc de la RULETA
+        RUSSA!
+      </h6>
+      <p>Atreveix-te a participar...</p>
+      <input type="button" class="button" id="startButton" value="Comença" />
+    </div>
+
+    <div id="registerScreen" style="display: none">
+      <p id="registerWelcomeText">
+        Abans de res, registra fins a 5 jugadors/es:
+      </p>
+      <input
+        type="button"
+        class="button"
+        id="registerPlayersButton"
+        value="Nou jugador"
+      />
+      <p id="registeredText" style="display: none">
+        Fins ara has registrat
+        <span id="registeredCount"></span> jugadors/es.
+      </p>
+      <input
+        type="button"
+        class="button"
+        id="finishRegisterButton"
+        value="Ja hi som tots/es!"
+        style="display: none"
+      />
+    </div>
+
+    <div id="startGameScreen" style="display: none">
+      <p>
+        Ara començarà el joc:<br>Amb una sola bala al tambor, tots els/les
+        jugadors/es es disparàn amb el revòlver.
+      </p>
+      <p>
+        Si algú te la mala sort d'encertar la bala el joc finalitza...</p>
+        <p>i el cadàver es tira al riu!! HAHAHAHAHAHAHA!!!!!</p>
+      <p>
+        Però si teniu sort i acabeu la ronda sense disparar, haureu guanyat i
+        tornareu tots a casa sans i estalvis!
+      </p>
+      <p>
+        Recodeu, el joc no es pot finalitzar un cop començat, si seguiu
+        endavant, només queden dues opcions:
+      </p>
+      <p>Cadaver al riu, o glòria per a tots/es.</p>
+      <input 
+        type="button"
+        class="button"
+        id="startShootingButton"
+        value="Dispara!" />
+      <input
+        type="button"
+        class="button"
+        id="escapteButton"
+        value="Som uns/es covars, passem..."
+      />
+    </div>
+
+    <div id="endGameScreen" style="display: none">
+      <p><span id="endGameMessage"></span></p>
+      <input
+        type="button"
+        class="button"
+        id="restartButton"
+        value="Torne-m'hi!"
+      />
+    </div>
+  </body>
+</html>

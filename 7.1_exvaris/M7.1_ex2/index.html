@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <script src="js.js"></script>
+    <!--referència a l'arxiu JavaScript-->
+    <title>M7.1_Exercici 1</title>
+    <style>
+        h1,
+        label,
+        input,
+        p,
+        div {
+            margin: 16px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mitja de la classe</h1>
+    <br>
+
+    <label for="studentsNumber" id="inputLabel">Quantes notes vols introduir?</label>
+    <input type="number" name="studentsNumber" id="studentsNumber">
+    <br>
+
+    <input type="button" value="Introduir notes" name="dataButton" id="dataButton"
+    onclick="enterGrades()">
+    <br>
+
+    <p id="finalAnswer" style="display: none"></p>
+
+    <input id="restartButton" type="button" value="Tornar-hi" onclick="restart()"
+    style="display: none; margin: 16px">
+    <br>
+
+</body>
+
+</html>

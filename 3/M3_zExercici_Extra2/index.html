@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <title>M3_Exercici_Extra2</title>
+<!--referència a l'arxiu JavaScript-->
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Pintura necessària</h1>
+
+<!--Input del nombre-->
+    <div id="inputBox1">
+        <label for="alçada">Introdueix l'alçada de la paret a pintar</label>
+        <input type="text" name="alçada" id="alçada">
+    </div>
+    <br id="salt1">
+
+    <div id="inputBox2">
+        <label for="amplada">Introdueix l'amplada</label>
+        <input type="text" name="amplada" id="amplada">
+    </div>
+    <br id="salt2">
+
+    <div id="inputBox3">
+        <label for="mans">Quantes mans hi vols donar?</label>
+        <input type="text" name="mans" id="mans">
+    </div>
+    <br id="salt3">
+
+<!--Botó que exectuta la funció-->
+    <button id="calcBut" onclick="mostraResultat()">Calcula!</button>
+
+<!--Resultat que romàn amagat fins que la funció es resol-->
+    <p id="fraseRes"" style="display: none;">Et faran falta <span id="espaiResultat"></span> litres de pintura.</p>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <script src="js.js"></script> <!--referència a l'arxiu JavaScript-->
+    <title>M6_Exercici 1</title>
+    <style>
+        h1, label, input, p, div {
+            margin: 16px
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora arcaica
+    </h1>
+    <br>
+    <div id="dataInputs">
+    <label for="userNumber1">Escriu un operant:</label>
+    <input type="number" name="userNumber1" id="userNumber1">
+    <br>
+    <label for="userNumber2">Ara el segon operant:</label>
+    <input type="number" name="userNumber2" id="userNumber2">
+    <br>
+    <label for="operation">Ara indica quina operació vols fer (+, -, *, /, %):</label>
+    <input type="text" name="operation" id="operation" minlength="1" maxlength="1">
+    <br>
+    <input type="button" value="Calcula!" name="buttonCalc" id="buttonCalc" onclick="calculate()">
+    </div>
+    <p id="answer" style="display: none">El resultat de l'operació és: <span id="result"></span>.</p>
+
+    <input id="deleteButton" type="button" value="Esborrar" onclick="deleteData()" style="display: none; margin: 16px">
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <title>M4_Exercici Extra3</title>
+    <style>
+        label, input, p, select {margin: 8px;}
+        h1 {margin: 32px;}
+        div {border: 1px solid #000; width: 120px;}
+    </style> <!--afegim una mica d'estil per veure-ho millor-->
+</head>
+<body>
+    <h1>Pedra, paper i tisora</h1>
+<!--Inputs numèrics amb etiqueta on l'ususari introdueix la seva opció de joc d'entre 1, 2 i 3.-->
+    <p>Juguem a pedra, peper o tisora: <br>1.Pedra <br>2.Paper <br>3.Tisora</p>
+    <label for="numJoc">Tria (1-3):</label>
+    <input type="number" name="numJoc" id="numJoc" min="1" max="3">
+    <br>
+<!--Botó que inicia la funció per rebre els inputs, fer el càlcul i mostrar la resposta.-->
+    <input type="button" value="Juguem!" onclick="jocPedra()" style="margin: 16px">
+
+<!--La resposta romàn amagada fins que s'inicia la funció-->
+    <p id="resposta" style="display: none"></p>
+    <br>
+    <div id="puntuacio" style="display: none">
+    <p>PUNTUACIÓ</p>
+    <p>Tu: <span id="puntUsuari"></span></p>
+    <p>Jo: <span id="puntMaquina"></span></p>
+    </div>
+<!--botó per esborrar les dades i amagar la resposta-->
+    <input id="botoEsborra" type="button" value="Tornem a començar" onclick="esborrar()" style="margin: 16px; display: none">
+
+    <script src="index.js"></script> <!--referència a l'arxiu JavaScript-->
+</body>
+</html>

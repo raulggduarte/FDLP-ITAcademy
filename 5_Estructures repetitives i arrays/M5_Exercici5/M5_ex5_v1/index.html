@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <title>M5_Exercici5</title>
+    <style>label, input, select{margin: 8px}</style> <!--afegeixo una mica d'estil per separar les linies-->
+</head>
+<body>
+    <h1>Valoració de beques</h1>
+    <br>
+    <div id="dataInputs">
+    <!--Input amb etiqueta on l'ususari introdueix el seu nom-->
+        <label for="userName">Indica el teu nom i cognoms:</label>
+        <input type="text" name="userName" id="userName">
+        <br>
+    <!--Input amb etiqueta on l'ususari introdueix la seva edat-->
+        <label for="userAge">Indica la teva edat:</label>
+        <input type="number" name="userAge" id="userAge">
+        <br>
+    <!--Inputs amb etiquetes on l'ususari escull entre dues opcions-->
+        <label for="hasAdegree">Tens un títol universitari?</label>
+        <select id="hasAdegree" name="hasAdegree">
+        <option value="yes">Sí</option>
+        <option value="no">No</option>
+        </select>
+        <br>
+        <label for="isUnemployed">Estàs a l'atur?</label>
+        <select id="isUnemployed" name="isUnemployed">
+        <option value="yes">Sí</option>
+        <option value="no">No</option>
+        </select>
+        <br>
+    <!--botó per executar la funció i mostrar la resposta-->
+        <input type="button" onclick="checkScholarship()" value="Tramitar sol·licitut">
+        <br>
+    </div>
+<!--La resposta romàn amagada fins que es resol la funció-->
+    <p id="answer" style="display: none"></p>
+
+    <script src="js.js"></script> <!--referència a l'arxiu JavaScript-->
+
+</body>
+</html>

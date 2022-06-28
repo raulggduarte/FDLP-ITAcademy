@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Raúl Gallegos Duarte" />
+    <!--referència a l'arxiu JavaScript-->
+    <script src="js.js"></script>
+    <title>M7.3_Exercici 1</title>
+    <style>
+      h1,
+      label,
+      input,
+      p {
+        margin: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Calcula l'àrea de...</h1>
+    <br />
+
+    <div id="optionInput">
+      <p>Escull la figura de la que en vols calcular l'àrea:</p>
+      <br />
+      <input
+        type="button"
+        value="Quadrat"
+        name="squareButton"
+        id="squareButton"
+        onclick="showMeasuresInputs('square')"
+      />
+      <br />
+      <input
+        type="button"
+        value="Triangle"
+        name="triangleButton"
+        id="triangleButton"
+        onclick="showMeasuresInputs('triangle')"
+      />
+      <br />
+      <input
+        type="button"
+        value="Rectangle"
+        name="rectangleButton"
+        id="rectangleButton"
+        onclick="showMeasuresInputs('rectangle')"
+      />
+      <br />
+      <input
+        type="button"
+        value="Cercle"
+        name="circleButton"
+        id="circleButton"
+        onclick="showMeasuresInputs('circle')"
+      />
+      <br />
+    </div>
+
+    <div id="dataInput" style="display: none">
+      <label for="base" style="display: none" id="baseLabel">Base en cm:</label>
+      <input type="number" name="base" id="base" style="display: none" />
+      <label for="height" style="display: none" id="heightLabel">Alçada en cm:</label>
+      <input type="number" name="height" id="height" style="display: none" />
+      <label for="radius" style="display: none" id="radiusLabel">Radi en cm:</label>
+      <input type="number" name="radius" id="radius" style="display: none" />
+      <input
+        type="button"
+        value="Calcula l'àrea"
+        name="calculateButton"
+        id="calculateButton"
+        onclick="mainAreaFunction()"
+      />
+    </div>
+
+    <p id="finalAnswer" style="display: none"></p>
+
+    <input
+      id="restartButton"
+      type="button"
+      value="Tornar-hi"
+      onclick="restart()"
+      style="display: none; margin: 16px"
+    />
+    <br />
+  </body>
+</html>

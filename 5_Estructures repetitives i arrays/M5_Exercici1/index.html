@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <script src="js.js"></script> <!--referència a l'arxiu JavaScript-->
+    <title>M5_Exercici 1</title>
+    <style>
+        h1, label, input, p, div {
+            margin: 16px
+        }
+    </style>
+</head>
+<body>
+    <h1>Compta paraules</h1>
+    <br>
+<!--Input amb etiqueta on l'ususari introdueix un número del 00 al 99, 
+    quan escriu alguna cosa crida a la funció-->
+    <label for="wordsNumber">Escriu el nombre de paraules que voldràs afegir:</label>
+    <input type="number" name="wordsNumber" id="wordsNumber">
+    <br>
+    <input type="button" value="Introduir paraules" name="buttonCount" id="buttonCount" onclick="insertWords()">
+
+<!--La resposta romàn amagada fins que s'inicia la funció-->
+    <p id="resposta" style="display: none">Has escrit <span id="numeroParaules"></span> paraules que són:</p>
+    <div id="llistaParaules" style="display: none"></div>
+
+<!--botó per esborrar les dades i amagar la resposta, amagat d'inici-->
+    <input id="botoEsborra" type="button" value="Esborrar" onclick="esborrar()" style="display: none; margin: 16px">
+</body>
+</html>

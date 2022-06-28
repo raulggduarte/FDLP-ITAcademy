@@ -1,0 +1,26 @@
+body{
+    margin-left: 50px;
+}
+.titol {
+    color:coral;
+    text-align: center;
+    background-color: aquamarine;
+    width: 30%;
+    border-radius: 5px;
+} 
+#input-edat{
+    font-size: large;
+    padding: 10px;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    font-style: oblique;
+    
+}
+.btn-verficar{
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+ 
+
+}

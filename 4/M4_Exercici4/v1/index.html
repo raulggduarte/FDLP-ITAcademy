@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <script src="index.js"></script> <!--referència a l'arxiu JavaScript-->
+    <title>M4_Exercici4</title>
+</head>
+<body>
+    <h1>Quants dies te?</h1>
+    <br>
+<!--Input amb etiqueta on l'ususari introdueix el mes, en número, d'entre 1 i 12.
+Quan s'escriu alguna cosa crida a la funció-->
+    <label for="quinMes">Indica un mes de l'any (en número):</label>
+    <input type="number" name="quinMes" id="quinMes" oninput="calculaDiesMes()" min="1" max="12">
+    <br>
+
+<!--La resposta romàn amagada fins que s'inicia la funció-->
+    <p id="resposta" style="display: none"></p>
+
+<!--botó per esborrar les dades i amagar la resposta-->
+    <input type="button" value="Esborrar" onclick="esborrar()" style="margin: 16px">
+</body>
+</html>

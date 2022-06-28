@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <!--referència a l'arxiu JavaScript-->
+    <script src="js.js"></script>
+    <title>M7.2_Exercici 6</title>
+    <style>
+        h1,
+        label,
+        input,
+        p {
+            margin: 16px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Troba el primer</h1>
+    <br>
+
+    <div id="dataInput">
+        <label for="userNumber" id="inputLabel">Busquem un nombre primer.</label>
+        <br>
+
+        <input type="button" value="Cerca!" name="calculateButton" id="calculateButton"
+            onclick="start()">
+        <br>
+    </div>
+
+    <p id="finalAnswer" style="display: none"></p>
+
+    <input id="restartButton" type="button" value="Tornar-hi" onclick="restart()" style="display: none; margin: 16px">
+    <br>
+
+</body>
+
+</html>

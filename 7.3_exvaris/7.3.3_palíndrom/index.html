@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Raúl Gallegos Duarte" />
+    <!--referència a l'arxiu JavaScript-->
+    <script src="js.js"></script>
+    <title>M7.3_Exercici 3</title>
+    <style>
+      h1,
+      label,
+      input,
+      p {
+        margin: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>És un palíndrom?</h1>
+    <br />
+
+    <div id="dataInput">
+      <label for="userString">Escriu una paraula de mínim dues lletres:</label>
+      <input type="text" name="userString" id="userString" minlength="2" />
+      <br />
+
+      <input
+        type="button"
+        value="Esbrina si és palíndrom!"
+        name="palindromeButton"
+        id="palindromeButton"
+        onclick="mainPalindromeFunction()"
+      />
+    </div>
+
+    <p id="finalAnswer" style="display: none"></p>
+
+    <input
+      id="restartButton"
+      type="button"
+      value="Tornar-hi"
+      onclick="restart()"
+      style="display: none; margin: 16px"
+    />
+    <br />
+  </body>
+</html>

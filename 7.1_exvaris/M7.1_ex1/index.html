@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <script src="js.js"></script>
+    <!--referència a l'arxiu JavaScript-->
+    <title>M7.1_Exercici 1</title>
+    <style>
+        h1,
+        label,
+        input,
+        p,
+        div {
+            margin: 16px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Passo de curs?</h1>
+    <br>
+    <div id="dataInputs">
+        <label for="gradeOne">Escriu la nota de la primera assignatura:</label>
+        <input type="number" name="gradeOne" id="gradeOne" min="0" max="10">
+        <br>
+        <label for="gradeTwo">Escriu la nota de la segona assignatura:</label>
+        <input type="number" name="gradeTwo" id="gradeTwo" min="0" max="10">
+        <br>
+        <label for="gradeThree">Escriu la nota de la tercera assignatura:</label>
+        <input type="number" name="gradeThree" id="gradeThree" min="0" max="10">
+        <br>
+        <input type="button" value="Calcula si has superat el curs" name="buttonCalc" id="buttonCalc"
+            onclick="startCalulation()">
+    </div>
+    <p id="answer" style="display: none"></p>
+
+    <input id="deleteButton" type="button" value="Esborrar" onclick="deleteData()" style="display: none; margin: 16px">
+</body>
+
+</html>

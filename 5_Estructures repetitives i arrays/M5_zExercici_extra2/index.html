@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <title>M5_Exercici_extra2</title>
+    <style>
+        label,
+        input,
+        select {
+            margin: 8px
+        }
+    </style>
+    <!--afegeixo una mica d'estil per separar les linies-->
+</head>
+
+<body>
+    <h1>Pintem una L</h1>
+    <br>
+    <div id="dataInputs">
+        <!--Input amb etiqueta on l'ususari introdueix la seva edat-->
+        <label for="userHeigh">Quina alçada vols que tingui la lletra?</label>
+        <input type="number" name="userHeigh" id="userHeigh" min="1">
+        <br>
+        <!--botó per executar la funció i mostrar la resposta-->
+        <input type="button" onclick="drawL()" value="Dibuixa!">
+        <br>
+    </div>
+    <!--La resposta romàn amagada fins que es resol la funció-->
+    <p id="answer" style="display: none"></p>
+
+     <!--botó per tornar a jugar-->
+     <input type="button" id="replayButton" onclick="rePlay()" value="Torne-m'hi!" style="display: none">
+     <br>
+
+    <script src="js.js"></script>
+    <!--referència a l'arxiu JavaScript-->
+
+</body>
+
+</html>

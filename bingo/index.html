@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Raúl Gallegos Duarte" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="js.js"></script>
+  </head>
+
+  <body>
+    <h1 id="title">BiNGO!</h1>
+
+    <div id="introModule">
+      <p>
+        Benvingut al gran BiNGO!</br>Per començar a jugar, crea un cartró
+        nou:
+      </p>
+      <input
+        type="button"
+        class="button"
+        name="createSheet"
+        id="createSheet"
+        onclick="createSheet()"
+        value="Crea un cartró"
+      />
+      <br />
+    </div>
+
+    <div id="gameModule" style="display: none">
+      <p id="ballText">Bola:</p>
+      <p id="ballNumber">--</p>
+
+      <table id="sheetTable" style="display: none;">
+        <tr id="0">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="1">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="2">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <p id="answer"></p>
+      <input
+        type="button"
+        class="button"
+        name="playButton"
+        id="playButton"
+        onclick="playBingo()"
+        value="Juguem!"
+      />
+
+      <input
+        type="button"
+        class="button"
+        name="createSheet2"
+        id="createSheet2"
+        onclick="createSheet()"
+        value="Crea un altre cartró"
+      />
+      
+      <input
+        type="button"
+        class="button"
+        name="stopButton"
+        id="stopButton"
+        onclick="stopBingo()"
+        value="Parar de jugar"
+        style="display: none"
+      />
+
+      <input
+      type="button"
+      class="button"
+      name="continueBingo"
+      id="continueBingo"
+      onclick="continueBingo()"
+      value="Continua amb el BiNGO"
+      style="display: none"
+    />
+
+    <input
+    type="button"
+    class="button"
+    name="resetBingo"
+    id="resetBingo"
+    onclick="resetBingo()"
+    value="Tornem a començar!"
+    style="display: none"
+  />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <script src="js.js"></script>
+    <title>M5_Exercici 2</title>
+    <style>
+        h1, label, input, p, div {
+            margin: 16px
+        }
+    </style>
+</head>
+<body>
+    <h1>Suma rang de nombres</h1>
+    <br>
+
+    <label for="initialNumber" id="labelInitial">Escriu un nombre enter:</label>
+    <input type="number" name="initialNumber" id="initialNumber">
+    <br>
+    <label for="finalNumber" id="labelFinal">Ara un altre nombre fins on fer la suma:</label>
+    <input type="number" name="finalNumber" id="finalNumber">
+    <br>
+    <input type="button" value="Fes la suma del rang establert" name="buttonAmount" id="buttonAmount" onclick="amountNumbers()">
+
+
+    <p id="answer" style="display: none"></p>
+    <div id="totalAmount" style="display: none"></div>
+
+
+    <input id="deleteButton" type="button" value="Esborrar" onclick="esborrar()" style="display: none; margin: 16px">
+</body>
+</html>

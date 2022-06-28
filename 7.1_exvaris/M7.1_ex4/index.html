@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <!--referència a l'arxiu JavaScript-->
+    <script src="js.js"></script>
+    <title>M7.1_Exercici 4</title>
+    <style>
+        h1,
+        label,
+        input,
+        p,
+        div {
+            margin: 16px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>És negatiu?</h1>
+    <br>
+
+    <label for="userNumber1" id="inputLabel1">Introdueix un nombre:</label>
+    <input type="number" name="userNumber1" id="userNumber1">
+    <br>
+
+    <label for="userNumber2" id="inputLabel2">Introdueix un altre nombre:</label>
+    <input type="number" name="userNumber2" id="userNumber2">
+    <br>
+
+    <input type="button" value="Algún dels nombres és negatiu?" name="calculateButton" id="calculateButton" onclick="positiveOrNegative()">
+    <br>
+
+    <p id="finalAnswer" style="display: none"></p>
+
+    <input id="restartButton" type="button" value="Tornar-hi" onclick="restart()" style="display: none; margin: 16px">
+    <br>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <script src="js.js"></script>
+    <!--referència a l'arxiu JavaScript-->
+    <title>M6_Exercici 2</title>
+    <style>
+        h1,
+        label,
+        input,
+        p,
+        div {
+            margin: 16px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>L'edat mitjana 2</h1>
+    <br>
+    <div id="dataInput">
+        <input type="button" value="Introduir dades" name="startButton" id="startButton" onclick="start()">
+        <br>
+    </div>
+    <p id="answer" style="display: none"></p>
+
+    <input id="restartButton" type="button" value="Esborrar" onclick="restart()" style="display: none; margin: 16px">
+</body>
+
+</html>

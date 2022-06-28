@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <title>M3_Exercici3</title>
+</head>
+<body>
+    <h1>Nota mitjana</h1>
+
+<!--Inputs de les notes-->
+    <div id="caixaNota1">
+        <label for="nota1">Nota de la primera assignatura</label>
+        <input type="text" name="nota1" id="nota1">
+    </div>
+    <br id="salt1">
+
+    <div id="caixaNota2">
+        <label for="nota2">Nota de la primera assignatura</label>
+        <input type="text" name="nota2" id="nota2">
+    </div>
+    <br id="salt2">
+
+    <div id="caixaNota3">
+        <label for="nota3">Nota de la primera assignatura</label>
+        <input type="text" name="nota3" id="nota3">
+    </div>
+    <br id="salt3">
+
+<!--Resultat que romàn amagat fins que la funció es resol-->
+    <p id="resultat" >La nota mitjana de les tres assignatures és de:</p>
+    <p id="espaiResultat"></p>
+    <br>
+
+<!--Botó que exectuta la funció-->
+    <button id="calcBut" onclick="mostraResultat()">Calcula!</button>
+
+<!--referència a l'arxiu JavaScript-->
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <script src="index.js"></script>
+    <title>M4_Exercici2</title>
+    <!--referència a l'arxiu JavaScript-->
+</head>
+
+<body>
+    <h1>Què estàs estudiant?</h1>
+    <br>
+    <!--Input amb etiqueta on l'ususari introdueix la seva age, quan escriu alguna cosa crida a la funció-->
+    <label for="age">Indica la teva edat:</label>
+    <input type="number" name="age" id="age" oninput="courseCalculate()">
+    <br>
+
+    <!--La answer romàn amagada fins que s'inicia la funció-->
+    <p id="answer" style="display: none"></p>
+
+    <!--botó amagat per esborrar les dades i amagar la answer-->
+    <input id="deleteButton" type="button" value="Esborrar" onclick="esborrar()" style="display: none; margin: 16px">
+</body>
+
+</html>

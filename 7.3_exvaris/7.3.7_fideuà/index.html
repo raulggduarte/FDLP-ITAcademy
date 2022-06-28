@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Raúl Gallegos Duarte" />
+    <!--referència a l'arxiu JavaScript-->
+    <script src="js_v2.js"></script>
+    <title>M7.3_Exercici 7</title>
+    <style>
+      h1,
+      label,
+      input,
+      p {
+        margin: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Fideuà!</h1>
+    <br />
+
+    <div id="dataInput">
+      <label for="pastaPrice">Preu per quilo de fideus:</label>
+      <input type="number" name="pastaPrice" id="pastaPrice" />
+      <br />
+      <label for="calamariPrice">Preu per quilo de calamars:</label>
+      <input type="number" name="calamariPrice" id="calamariPrice" />
+      <br />
+      <label for="shrimPrice">Preu per quilo de gambes:</label>
+      <input type="number" name="shrimPrice" id="shrimPrice" />
+      <br />
+      <label for="peopleNumber">Quantes persones sereu?</label>
+      <input type="number" name="peopleNumber" id="peopleNumber" />
+      <br />
+
+      <input
+        type="button"
+        value="A comprar!"
+        name="shoppingCalcButton"
+        id="shoppingCalcButton"
+        onclick="fideuaShoppingCalc()"
+      />
+    </div>
+
+    <p id="finalAnswer" style="display: none"></p>
+
+    <input
+      id="restartButton"
+      type="button"
+      value="Tornar-hi"
+      onclick="restart()"
+      style="display: none; margin: 16px"
+    />
+    <br />
+  </body>
+</html>

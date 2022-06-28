@@ -1,0 +1,111 @@
+//MAIN FUNCTION******************************************
+
+function myMap(arr, callback) {
+  const mappedArray = [];
+
+  for (i = 0; i < arr.length; i++) {
+    mappedArray.push(callback(arr[i]));
+  }
+
+  return mappedArray;
+}
+
+//VARIABLES***********************************************
+
+arr = [1, 2, 3, 4, 5];
+
+arr2 = ["a", "be", "ce", "de"];
+
+//CASE3***************************************************
+
+function sumByOne(item) {
+  return item + 1;
+}
+
+console.log(myMap(arr, sumByOne));
+
+//CASE4***************************************************
+
+function sumByTwo(item) {
+  return item + 2;
+}
+
+console.log(myMap(arr, sumByTwo));
+
+//CASE5***************************************************
+
+function sumByThree(item) {
+  return item + 3;
+}
+
+console.log(myMap(arr, sumByThree));
+
+//CASE6***************************************************
+
+function multiplyByTwo(item) {
+  return item * 2;
+}
+
+console.log(myMap(arr, multiplyByTwo));
+
+//CASE7***************************************************
+
+function restByTwo(item) {
+  return item - 2;
+}
+
+console.log(myMap(arr, restByTwo));
+
+//CASE8***************************************************
+
+function dividedByTwo(item) {
+  return item / 2;
+}
+
+console.log(myMap(arr, dividedByTwo));
+
+//CASE9***************************************************
+
+function toUpperCase(item) {
+  return item.toUpperCase();
+}
+
+console.log(myMap(arr2, toUpperCase));
+
+
+//ALTERNATIVES********************************************
+
+//les 3 primeres són la mateixa, cada cop més simple:
+
+console.log(myMap(arr, function (item) {
+  return item + 1
+  }
+));
+
+console.log(myMap(arr, (item) => {return item + 1}));
+
+console.log(myMap(arr, item => item + 1));
+
+console.log(myMap(arr, item => item + 2));
+
+console.log(myMap(arr, item => item + 3));
+
+console.log(myMap(arr, item => item * 2));
+
+console.log(myMap(arr, item => item - 2));
+
+console.log(myMap(arr, item => item / 2));
+
+console.log(myMap(arr2, item => item.toUpperCase()));
+
+
+//comparat amb el map per defecte 
+
+newArray1 = myMap(arr2, toUpperCase);
+
+newArray2 = arr2.map((element) => {
+  return element.toUpperCase();
+});
+
+console.log(newArray1);
+console.log(newArray2);

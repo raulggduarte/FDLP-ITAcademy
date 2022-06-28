@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <script src="index.js"></script> <!--referència a l'arxiu JavaScript-->
+    <title>M4_Exercici EXTRA 2</title>
+</head>
+<body>
+    <h1>Escriu números</h1>
+    <br>
+<!--Input amb etiqueta on l'ususari introdueix un número del 00 al 99, 
+    quan escriu alguna cosa crida a la funció-->
+    <label for="num">Escriu un número sencer del 0 al 99:</label>
+    <input type="number" name="num" id="num" oninput="escriuNumero()" min="0" max="99">
+    <br>
+
+<!--La resposta romàn amagada fins que s'inicia la funció-->
+    <p id="resposta" style="display: none">El número <span id="numeroEscrit"></span>.</p>
+
+<!--botó per esborrar les dades i amagar la resposta, amagat d'inici-->
+    <input id="botoEsborra" type="button" value="Esborrar" onclick="esborrar()" style="display: none; margin: 16px">
+</body>
+</html>

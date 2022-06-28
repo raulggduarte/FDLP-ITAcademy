@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <script src="index.js"></script> <!--referència a l'arxiu JavaScript-->
+    <title>M4_Exercici5</title>
+    <style>
+        label, input, p {margin: 8px;}
+        h1 {margin: 32px}
+    </style>  <!--afegim una mica d'estil per veure-ho millor-->
+</head>
+<body>
+    <h1>Calculem!</h1>
+<!--Inputs amb etiqueta on l'ususari introdueix els dos operants i l'operador.-->
+    <label for="operant1">Indica un número:</label>
+    <input type="number" name="operant1" id="operant1">
+    <br>
+    <label for="operador">Indica un operant d'entre +, -, *, /:</label>
+    <input type="text" name="operador" id="operador" maxlength="1">
+    <br>
+    <label for="operant2">Indica un altre número:</label>
+    <input type="number" name="operant2" id="operant2">
+    <br>
+
+<!--Botó que inicia la funció per rebre els inputs, fer el càlcul i mostrar la resposta.-->
+    <input type="button" value="Calcular" onclick="calculaOperacio()" style="margin: 16px">
+
+    <!--La resposta romàn amagada fins que s'inicia la funció-->
+    <p id="resposta" style="display: none"></p>
+
+<!--botó per esborrar les dades i amagar la resposta-->
+    <input id="botoEsborra" type="button" value="Esborrar" onclick="esborrar()" style="margin: 16px; display: none">
+</body>
+</html>

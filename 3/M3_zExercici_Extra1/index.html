@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Gallegos Duarte">
+    <title>M3_Exercici3</title>
+<!--referència a l'arxiu JavaScript-->
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Doble i triple</h1>
+
+<!--Input del nombre-->
+    <div id="inputBox">
+        <label for="nombre">Introdueix un nombre</label>
+        <input type="text" name="nombre" id="nombre">
+    </div>
+    <br id="salt1">
+
+<!--Botó que exectuta la funció-->
+    <button id="calcBut" onclick="mostraResultat()">Calcula!</button>
+
+<!--Resultat que romàn amagat fins que la funció es resol-->
+    <p id="resultat1" style="display: none;">El DOBLE del nombre que has introduit és:</p>
+    <p id="espaiResultat1" style="display: none;"></p>
+
+    <p id="resultat2" style="display: none;">El TRIPLE del nombre que has introduit és:</p>
+    <p id="espaiResultat2" style="display: none;"></p>
+
+
+</body>
+</html>
